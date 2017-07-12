@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Luciano Liranço | Portfolio</title>
+  <meta name="author" content="Luciano Liranço" />
+  <meta name="description" content="Graphic Design Portfólio" />
+  <meta name="keywords"  content="graphic, design, ux, ui, portfolio, designer" />
+  <meta name="Resource-type" content="Document" />
+
+  <link rel="stylesheet" href="../inc/css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../inc/css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="../inc/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="../inc/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:600|Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="sass/lrnco.css" /> 
+
+  <script type="text/javascript" src="../inc/js/scrolloverflow.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../inc/js/jquery.fullPage.min.js"></script>
+ 
+
+  <script type="text/javascript" src="../inc/js/prefixfree.min.js"></script>
+     
+  
+  <script type="text/javascript">
+      function loc() {
+          return Math.floor(Math.random() * 90) + '%';
+      }
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['main', 'prothesis', 'joombo', 'bioblast'],
+        menu: '#menu',
+        scrollingSpeed: 1000,
+        scrollOverflow: true,
+        scrollOverflowOptions: {
+            scrollbars: false,
+            mouseWheel: true,
+            hideScrollbars: false,
+            fadeScrollbars: false,
+        },
+          
+          onLeave: function(index, nextIndex, direction){
+            var leavingSection = $(this);
+
+            if(index == index && direction =='down'){
+                document.getElementById("logo").style.top = loc();
+                document.getElementById("logo").style.left = loc();
+                $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+            }
+
+            else if(index == index && direction == 'up'){
+                document.getElementById("logo").style.top = loc();
+                document.getElementById("logo").style.left = loc();
+                $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+            }
+        }
+          
+      });
+    });
+  </script>
+</head>
+    
+    
+<body>
+  <div class="container-fluid">
+      <div class="col-xs-12 content">
+        <div id="fullpage">
+          <div class="section active" id="section0">
+            <div class="heading">
+            <h1>Luciano Liranço</h1>
+            <svg height="0" width="100"><line x1="100" y2="0" /></svg>
+            <span>Design Gráfico + </span>
+                <div class="text">
+                  <span class="word one">&nbsp;tecnologia</span>
+                  <span class="word two">&nbsp;Interface</span>
+                  <span class="word three">&nbsp;Coding</span>
+                  <span class="word four">&nbsp;Inovação</span>
+                  <span class="word five">&nbsp;Educação</span>
+                  <span class="word six final">&nbsp;Aprendizado!</span>
+              </div>
+            </div>  
+           </div>
+
+          <div class="section" id="section1">
+            <div class="row intro">
+            <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                
+                <h2>Prothesis <small>Storyboard</small></h2>
+                <hr>
+                <p>Passamos por um momento de desmaterialização do nosso lar. O conceito de lar relaciona-se cada vez menos com objetos e com o espaço físico da casa, e mais com as memórias e sentimentos que levamos conosco. A Prótese é a jóia implantada na pele, próxima ao coração. É um sistema que carrega o nosso lar imaterial, contendo  fotos, músicas, livros, revistas, redes sociais, vídeos e vozes de pessoas que amamos. Basta aproximá-la de uma tela ou ambiente interativo para acessar esse conteúdo. A prótese transforma qualquer espaço físico em um lar, preenchendo com as nossas memórias mais afetivas.</p>
+                <hr>
+                <em><small>Guto Requena / André Romitelli</small></em>
+		    </div>
+            <div class="col-xs-12 col-lg-8 col-xl-9">
+                <img src="../imgs/prothesis/prothesis.png">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <img src="../imgs/prothesis/prothesis2.png">
+            </div>
+            <div class="col-xs-12 pull-sm-right col-lg-4"> 
+                <img src="../imgs/prothesis/prothesis3.png"> 
+            </div>
+                 <div class="col-xs-12 pull-sm-left col-lg-3"> 
+                <img class="p-t-3" src="../imgs/prothesis/prothesis5.jpg"> 
+            </div> 
+            </div>
+            
+            <div class="row"> 
+                <div class="hidden-lg-down col-lg-2"></div>
+            <div class="col-xs-12 col-lg-10">
+                <img src="../imgs/prothesis/prothesis6.png"> 
+            </div>
+            </div> 
+            <div class="final"></div> 
+        </div>
+            
+          <div class="section" id="section2">
+            <div class="row intro">
+            <div class="hidden-md-down col-lg-6 col-xl-7">
+                <img src="../imgs/joombo/joombo.gif">
+            </div>
+            <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                <h2>Joombo <small>Identidade</small></h2>
+                <hr>
+                <p>O principal foco da agência Joombo é agregar novas cabeças, pensando no futuro do cliente. Mutáveis e adaptáveis a diferentes necessidades. Foi criado personagens com as principais características da equipe e isso foi somado ao conceito Full Brain Agency.</p>
+                <hr>
+                <em><small>Victor Paula</small></em>
+            </div>
+            <div class="col-xs-12 hidden-lg-up">
+                <img src="../imgs/joombo/joombo.gif">
+            </div>
+            <div class="col-xs-12 col-lg-5">
+                <img src="../imgs/joombo/joombo2.png">
+		    </div>
+            </div>
+          </div>
+            
+          <div class="section" id="section3">
+            <div class="row intro">
+             <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                <h2>BioBlast <small>Experimento</small></h2>
+                 <em><small>Posicione o mouse sobre a imagem</small></em>
+             </div>
+            </div>
+            <div class="row">
+             <div class="col-xs-12 col-lg-7">
+                <img src="../imgs/bioblast/bioblast_4.jpg">
+             </div>
+              <div class="hidden-ld-down col-lg-5" style="height:300px;"></div>  
+             <div class="col-xs-12 col-lg-5 bioblast-2">
+                <img src="../imgs/bioblast/bioblast_3.jpg">
+             </div>
+            </div>
+            <div class="row">
+             <div class="col-xs-12 col-lg-5 bioblast-3">
+                <img src="../imgs/bioblast/bioblast_2.jpg">
+             </div>
+            <div class="col-xs-12 col-lg-7 bioblast-4">
+                <img src="../imgs/bioblast/bioblast_1.jpg">
+             </div>
+            </div>
+          </div>
+          
+           
+            
+        </div>
+      </div>
+  </div>
+    
+
+  <div id="logo" class="on">
+    <a href="http://lrnco.cc">
+      <div id="stage">
+        <div id="ball">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+    
+<div class="float left">
+<div class="float-left">
+  <div class="float-item mail"><a href="mailto:luciano@lrnco.cc">luciano@lrnco.cc</a></div>
+ <div class="float-item">      
+ <svg height="100" width="0"><line x1="0" y2="100" /></svg>
+</div> 
+    
+  <div class="float-item social-icons">
+    <p><a href="http://www.instagram.com/luciano_liranco/"><i class="fa fa-instagram" ara-hidden="true"></i></a></p>
+    <p><a href="http://www.facebook.com/lucianoliranco"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+  </div>
+</div> 
+</div>
+    
+
+    
+<div class="float right">
+    <div class="flag"><a href="" lang="en" hreflang="en"><span class="lang-en"></span></a></div>
+<div class="float-right">
+  <ul id="menu" class="float-item">
+    <li data-menuanchor="main"><a href="#main">main</a></li>
+    <li data-menuanchor="prothesis"><a href="#prothesis">Prothesis</a></li>
+    <li data-menuanchor="joombo"><a href="#joombo">Joombo</a></li>
+    <li data-menuanchor="bioblast"><a href="#bioblast">Bio Blast</a></li>
+  </ul>
+</div>
+</div> 
+    
+    
+  <div class="next-section" id="next"><i class="fa fa-angle-double-down" aria-hidden="true"></i></div>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js'></script> 
+ <script type="text/javascript" src="../inc/js/lrnco.js"></script> 
+ <script type="text/javascript" src="../inc/js/bootstrap.min.js"></script> 
+
+</body>
+</html>

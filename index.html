@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Luciano Liranço | Portfolio</title>
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="author" content="Luciano Liranço" />
+  <meta name="description" content="Graphic Design Portfólio" />
+  <meta name="keywords"  content="graphic, design, ux, ui, portfolio, designer" />
+  <meta name="Resource-type" content="Document" />
+
+  <link rel="stylesheet" href="inc/css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="inc/css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="inc/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="inc/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="sass/lrnco.css" /> 
+
+  <script type="text/javascript" src="inc/js/scrolloverflow.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="inc/js/jquery.fullPage.min.js"></script>
+ 
+
+  <script type="text/javascript" src="inc/js/prefixfree.min.js"></script>
+    
+    <script src="https://use.typekit.net/lfk4kry.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+     
+  
+  <script type="text/javascript">
+      function loc() {
+          return Math.floor(Math.random() * 90) + '%';
+      }
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['main', 'prothesis', 'mcb', 'joombo', 'tsp', 'bioblast', 'about'],
+        menu: '#menu',
+        scrollingSpeed: 1000,
+        scrollOverflow: true,
+        scrollOverflowOptions: {
+            scrollbars: true,
+            mouseWheel: true,
+            hideScrollbars: false,
+            fadeScrollbars: false,
+            disableMouse: true
+
+        },
+          
+          onLeave: function(index, nextIndex, direction){
+            var leavingSection = $(this);
+
+            if(index == index && direction =='down'){
+                document.getElementById("logo").style.top = loc();
+                document.getElementById("logo").style.left = loc();
+                $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+            }
+
+            else if(index == index && direction == 'up'){
+                document.getElementById("logo").style.top = loc();
+                document.getElementById("logo").style.left = loc();
+                $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+            }
+        }
+          
+      });
+    });
+  </script>
+</head>
+    
+    
+<body>
+  <div class="container-fluid">
+      <div class="col-xs-12 content">
+        <div id="fullpage">
+          <div class="section active" id="section0">
+            <div class="heading">
+            <h1>Luciano Liranço</h1>
+            <hr>
+                <h3><a href="#prothesis">work</a></h3><svg height="0" width="50"><line x1="50" y2="0"/></svg><h3><a href="#about">about</a></h3>
+            </div>  
+           </div>
+
+          <div class="section" id="section1">
+            <div class="row intro">
+            <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                
+                <h2>Prothesis <small>Storyboard</small></h2>
+                <hr>
+                <p>We have been through a time of dematerialization of our home. The concept of home is fewer related with objects and the physical space of the house, and more with the memories and feelings that we carry with us. The prosthesis is the jewel implanted in the skin, near the heart. It is a system that carries our intangible home, containing photos, music, books, magazines, social networks, videos and voices of people we love. Just bring it to a screen or interactive environment to access this content. The prosthesis turns any physical space in a home, filling it with our most emotional memories.</p>
+                <hr>
+                <em><small>Guto Requena / André Romitelli</small></em>
+		    </div>
+            <div class="col-xs-12 col-lg-8 col-xl-9">
+                <img src="imgs/prothesis/prothesis.png">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-12 col-lg-7">
+                <img src="imgs/prothesis/prothesis2.png">
+            </div>
+            <div class="col-xs-12 pull-sm-right col-lg-4"> 
+                <img src="imgs/prothesis/prothesis.jpg"> 
+            </div>
+                <!-- <div class="col-xs-12 pull-sm-left col-lg-3"> 
+                <img class="p-t-3" src="imgs/prothesis/prothesis3.png"> 
+            </div> -->
+            </div>
+            
+            <div class="row"> 
+                <div class="hidden-lg-down col-lg-2"></div>
+            <div class="col-xs-12 col-lg-10">
+                <img src="imgs/prothesis/prothesis6.png"> 
+            </div>
+            </div> 
+            <div class="final"></div> 
+        </div>
+        
+        <div class="section" id="section2">
+            <div class="row intro">
+            <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                
+                <h2>29º Prêmio do Museu da Casa Brasileira <small>Poster</small></h2>
+                <hr>
+                <p>Just like the posters lambe-lambe, Stickers are a form of expression of urban art, very common in Sao Paulo. The poster developed for the 29th Award of the Brazilian House Museum has the same concept as the Stickers, it spreads identity and message. Printed in adhesive, it invites everyone to interact.</p>
+                <hr>
+                <em><small>Ana Saritha</small></em>
+		    </div>
+            <div class="col-xs-12 col-lg-8 col-xl-9">
+                <img src="imgs/29mcb/mcb1.jpg">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <img src="imgs/29mcb/mcb4.jpg">
+            </div>
+            <div class="col-xs-12 pull-sm-right col-lg-5"> 
+                <img src="imgs/29mcb/mcb3.jpg"> 
+            </div>  
+            </div>
+   
+            <div class="final"></div> 
+        </div>
+            
+          <div class="section" id="section3">
+            <div class="row intro">
+            <div class="hidden-md-down col-lg-6 col-xl-7">
+                <img src="imgs/joombo/joombo.gif">
+            </div>
+            <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                <h2>Joombo <small>Identity</small></h2>
+                <hr>
+                <p>The main focus of Joombo agency is adding new heads, aiming at the customer's future. Changeable and adaptable to different needs.  Characters were created from the main team characteristics and this was added to the concept of Full Brain Agency.</p>
+                <hr>
+                <em><small>Victor Paula</small></em>
+            </div>
+            <div class="col-xs-12 hidden-lg-up">
+                <img src="imgs/joombo/joombo.gif">
+            </div>
+            <div class="col-xs-12 col-lg-5">
+                <img src="imgs/joombo/joombo2.png">
+		    </div>
+            </div>
+            <div class="final"></div> 
+          </div>
+            
+          <div class="section" id="section4">
+            <div class="row intro">
+             <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                <h2>Theatro São Pedro <small>Poster / Editorial</small></h2>
+                 <hr>
+                <p>2016 season communication of São Pedro Theatre. The emphasis on typography and colors blocadas generated the identity of all materials from discount for subscriptions and editorial to the various house programs and room posters.</p>
+                <hr>
+                 <em><small>Rico Lins / Nicolas Camargo</small></em>
+             </div>
+            <div class="col-xs-12 col-lg-8 col-xl-9">
+                <img src="imgs/TSP/TSP01.jpg">
+            </div>
+            </div>
+            <div class="row">  
+             <div class="col-xs-12 col-lg-5">
+                <img src="imgs/TSP/TSP02-2.gif">
+             </div>
+            <div class="hidden-ld-down col-lg-5" style="height:100px;"></div>        
+            <div class="col-xs-12 col-lg-7">
+                <img src="imgs/TSP/TSP04.png">
+             </div>
+            <div class="col-xs-12 col-lg-5">
+                <img src="imgs/TSP/TSP03.png">
+             </div>
+            <div class="col-xs-12 col-lg-7">
+                <img src="imgs/TSP/TSP05.png">
+             </div>
+            </div>
+            <div class="row">
+          
+            </div>
+            <div class="final"></div> 
+          </div>
+            
+         <div class="section" id="section5">
+            <div class="row intro">
+             <div class="entry col-xs-12 col-lg-4 col-xl-3">
+                <h2>BioBlast <small>Experiment</small></h2>
+                 <em><small>Hover the images</small></em>
+             </div>
+            </div>
+            <div class="row">
+             <div class="col-xs-12 col-lg-7">
+                <img src="imgs/bioblast/bioblast_4.jpg">
+             </div>
+              <div class="hidden-ld-down col-lg-5" style="height:300px;"></div>  
+             <div class="col-xs-12 col-lg-5 bioblast-2">
+                <img src="imgs/bioblast/bioblast_3.jpg">
+             </div>
+                <div class="col-xs-12 col-lg-5 bioblast-3">
+                <img src="imgs/bioblast/bioblast_2.jpg">
+             </div>
+            <div class="hidden-ld-down col-lg-5" style="height:100px;"></div>        
+            <div class="col-xs-12 col-lg-7 bioblast-4">
+                <img src="imgs/bioblast/bioblast_1.jpg">
+             </div>
+                
+            </div>
+            <div class="row">
+          
+            </div>
+            <div class="final"></div> 
+          </div>
+          
+          <div class="section about" id="section6">
+            <div class="row">
+              <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1">
+                <h3>About</h3>
+              </div>
+              <div class="col-xs-9 col-sm-8 col-md-5 col-lg-">
+                <p>I’m a 21-year-old Brazilian Creative living in São Paulo. Graduating at the end of the year in Graphic Design at Belas Artes. I have created  with Rico Lins, Guto Requena, André Romitelli, Victor Paula, Ana Saritha and a lot of awesome people. Are you the next?</p>
+                <hr>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1">
+                <h3>Contact</h3>
+              </div>
+              <div class="col-xs-9 col-sm-8 col-md-5 col-lg-5">
+                <a href="mailto:luciano@lrnco.cc">luciano@lrnco.cc</a>
+                <hr>
+              </div>
+            </div> 
+            
+            <div class="row">
+              <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1">
+                <h3>Follow</h3>
+              </div>
+              <div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+                <div class="social-icons">
+                <a  href="http://www.instagram.com/luciano_liranco/"><i class="fa fa-instagram" ara-hidden="true"></i></a>     <a href="http://www.facebook.com/lucianoliranco"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+                
+            <div class="row">
+              <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1">
+                
+              </div>
+              <div class="col-xs-9 col-sm-8 col-md-4">
+                <h3 class="bye">This website was designed and developed by me, as well as all content and imagery.</h3>
+                <h3 class="bye copyright"></h3>
+                </div>
+                <hr>
+              </div>
+            </div>
+                
+                
+                
+           
+              
+            
+            
+        </div>
+      </div>
+  </div>
+
+  <div id="logo" class="on">
+    <a href="http://lrnco.cc">
+      <div id="stage">
+        <div id="ball">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+    
+<div class="float left">
+<div class="float-left">
+  <div class="float-item mail"><a href="mailto:luciano@lrnco.cc">luciano@lrnco.cc</a></div>
+ <div class="float-item">      
+ <svg height="100" width="0"><line x1="0" y2="100" /></svg>
+</div> 
+    
+  <div class="float-item social-icons">
+    <p><a href="http://www.instagram.com/luciano_liranco/"><i class="fa fa-instagram" ara-hidden="true"></i></a></p>
+    <p><a href="http://www.facebook.com/lucianoliranco"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+  </div>
+</div> 
+</div>
+    
+
+    
+<div class="float right">
+   <!-- <div class="flag"><a href="/pt" lang="pt" hreflang="pt"><span class="lang-pt"></span></a></div>-->
+<div class="float-right">
+  <ul id="menu" class="float-item">
+<!--    <li data-menuanchor="main"><i class="fa fa-circle" aria-hidden="true"></i></li>-->
+    <li data-menuanchor="prothesis"><a href="#prothesis">Prthsis</a></li>
+    <li data-menuanchor="mcb"><a href="#mcb">29 MCB</a></li>
+    <li data-menuanchor="joombo"><a href="#joombo">Joombo</a></li>
+    <li data-menuanchor="tsp"><a href="#tsp">TSP</a></li>
+    <li data-menuanchor="bioblast"><a href="#bioblast">BioBlast</a></li>
+<!--    <li data-menuanchor="about"><i class="fa fa-circle" aria-hidden="true"></i></li>-->
+  </ul>
+</div>
+</div> 
+    
+<div class="next-section" id="next"><i class="fa fa-angle-double-down" aria-hidden="true"></i></div>
+    
+<div class="about-background"></div>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js'></script> 
+ <script type="text/javascript" src="inc/js/lrnco.js"></script> 
+ <script type="text/javascript" src="inc/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
